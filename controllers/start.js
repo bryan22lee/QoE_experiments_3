@@ -2,9 +2,9 @@
 var getOder = require('../models/random');
 var fs = require('fs');
 
-const vid_folder = "FantasticFinish2013_01_04BoysBasketball_Lakeviewvs_2_500k_360";
+const vid_folder = "Soccer_720p_2_3000k_720";
 var vid_path = "./videos/" + vid_folder;
-var video_url = "https://raw.githubusercontent.com/tony-ou/QoE_experiments_3/master/videos/" + vid_folder + "/";
+var video_url = "https://raw.githubusercontent.com/bryan22lee/QoE_experiments_3/master/videos/" + vid_folder + "/";
 var best_quality = video_url + "1.mp4";
 var worst_quality = video_url + "2.mp4";
 
