@@ -2,11 +2,11 @@
 var getOder = require('../models/random');
 var fs = require('fs');
 
-const vid_folder = "Soccer_720p_2_3000k_720";
+const vid_folder = "Soccer_720p_2_500k_360_exp1";
 var vid_path = "./videos/" + vid_folder;
 var video_url = "https://raw.githubusercontent.com/bryan22lee/QoE_experiments_3/master/videos/" + vid_folder + "/";
-var best_quality = video_url + "1.mp4";
-var worst_quality = video_url + "2.mp4";
+var best_quality = video_url + "1.mp4"; // no stall, no blue
+var worst_quality = video_url + "2.mp4"; // stall and bad blur
 
 var num_vids;
 
@@ -28,7 +28,7 @@ var post_start = async (ctx, next) => {
     var age = ctx.request.body.age;
     var network = ctx.request.body.network;
     var video_order = [1, 2, ...getOder(3,num_vids)];
-    //var video_order = [1,2,3,4,5,6,7]
+    //var video_order = [1,2,3,4]
     console.log(mturkID, device, age);
     var start = new Date().getTime();
    

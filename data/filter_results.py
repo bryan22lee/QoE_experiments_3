@@ -7,7 +7,7 @@ import subprocess
 
 #Sample filter function
 def filter_single_video(video_times, rating_times, video_order, scores,attentions):
-    #First check if user watching alines with video length
+    #First check if user watching aligns with video length
     #0.5 sec tolerance for black screen at the end
     ret = 0
     bad = 0

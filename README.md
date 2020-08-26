@@ -103,4 +103,13 @@ These are source codes for 1video experiment.
     - cnn: cnn, cnn_new
     - google: google, google_new
     - youtube: youtube, youtube_new
-3. To plot a single curve for a website, eg. amazon, just run `plot_amazon.py`. To plot all the curves combined in one picture, run `plot_combine.py`. `plot_diff.py` plots the differential of the curves on every 2 points(you can modify to every 1 point). All the plotted results are in the `./figs` folder.
+3. To plot a single curve for a website, eg. amazon, just run `plot_amazon.py`. To plot all the curves combined in one picture, run `plot_combine.py`. `plot_diff.py` plots the differential of the curves on every 2 points (you can modify to every 1 point). All the plotted results are in the `./figs` folder.
+
+4. Attention check:
+- 2 means no stall no blur 
+- 3 means blur no stall
+- 4 means stall no blur
+- 5 means stall and blur
+
+For example: best quality should be 2 and worst quality should be 5
+
