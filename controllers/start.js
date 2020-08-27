@@ -21,9 +21,12 @@ var post_example = async (ctx, next) => {
 }
 
 var post_start = async (ctx, next) => {
+    var time_start = new Date().toLocaleTimeString(); // 11:18:48 AM
+    var date_start = new Date().toLocaleDateString(); // 11/16/2015
+
     var active_time = parseFloat(ctx.request.body.active_time);
     var browserName = ctx.request.body.browser;
-       var mturkID = ctx.request.body.MTurkID;
+    var mturkID = ctx.request.body.MTurkID;
     var device = ctx.request.body.device;
     var age = ctx.request.body.age;
     var network = ctx.request.body.network;
@@ -36,6 +39,8 @@ var post_start = async (ctx, next) => {
 
  
     let user = {
+        time_start : time_start,
+        date_start : date_start,
         mturkID : mturkID,
         device : device,
         age : age,
@@ -306,8 +311,8 @@ write_return[user.video_order[i] -1 ]= user.return[i];
                  + write_grade_time + '\n' + write_active_grade_time + '\n' + user.mturkID + '\n' 
                  + user.device + '\n' + user.age + '\n' 
                  + user.network + '\n' + user.reason +'\n'+ user.browser + '\n' + user.instruction + '\n'+ user.training + '\n' +
-                 write_play + '\n' + write_pause + '\n' + write_seek + '\n' + write_reference + '\n' + write_return + '\n'
-                 + write_test, function(err) {
+                 write_play + '\n' + write_pause + '\n' + write_seek + '\n' + write_reference + '\n' + write_return + '\n' +
+                 user.date_start + '\n' + user.time_start + '\n' + write_test, function(err) {
         if(err) {
             return console.log(err);
         }
