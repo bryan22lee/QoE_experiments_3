@@ -1,4 +1,5 @@
 // start test:
+const moment= require('moment-timezone') 
 var getOder = require('../models/random');
 var fs = require('fs');
 
@@ -21,8 +22,10 @@ var post_example = async (ctx, next) => {
 }
 
 var post_start = async (ctx, next) => {
-    var time_start = new Date().toLocaleTimeString(); // 11:18:48 AM
-    var date_start = new Date().toLocaleDateString(); // 11/16/2015
+    // 03:48:34 CST
+    var time_start = moment().tz('America/Chicago').format('hh:mm:ss z')
+    // August 27th 2020, 12:00:28 am
+    var date_start = moment().tz('America/Chicago').format('MMMM Do YYYY, h:mm:ss a');
 
     var active_time = parseFloat(ctx.request.body.active_time);
     var browserName = ctx.request.body.browser;
