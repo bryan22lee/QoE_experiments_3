@@ -1,33 +1,33 @@
 {
-    "name": "QoEProject",
-    "version": "1.0.0",
-    "description": "QoEProject",
-    "main": "app.js",
-    "scripts": {
-        "start": "node --use_strict app.js"
-    },
-    "keywords": [
-        "koa",
-        "async",
-        "nunjucks"
-    ],
-    "author": "Yizhuo",
-    "license": "Apache-2.0",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/eastOffice/QoEProject.git"
-    },
-    "dependencies": {
-        "koa": "^2.7.0",
-        "koa-bodyparser": "^4.3.0",
-        "koa-router": "7.0.0",
-        "mime": "^1.6.0",
-        "moment": "^2.27.0",
-        "moment-timezone": "^0.5.31",
-        "mz": "2.4.0",
-        "nunjucks": "^3.2.2",
-        "prompt-sync": "^4.2.0",
-        "rimraf": "^3.0.0",
-        "ws": "^6.0.0"
-    }
+  "name": "QoEProject",
+  "version": "1.0.0",
+  "description": "QoEProject",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --use_strict app.js"
+  },
+  "keywords": [
+    "koa",
+    "async",
+    "nunjucks"
+  ],
+  "author": "Yizhuo",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eastOffice/QoEProject.git"
+  },
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "7.0.0",
+    "mime": "^1.6.0",
+    "moment": "^2.27.0",
+    "moment-timezone": "^0.5.31",
+    "mz": "2.4.0",
+    "nunjucks": "^3.2.2",
+    "prompt-sync": "^4.2.0",
+    "rimraf": "^3.0.0",
+    "ws": "^6.0.0"
+  }
 }
