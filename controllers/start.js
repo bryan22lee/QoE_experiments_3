@@ -1,5 +1,5 @@
 // start test:
-const moment= require('moment-timezone') 
+const moment = require('moment-timezone');
 var getOder = require('../models/random');
 var fs = require('fs');
 
