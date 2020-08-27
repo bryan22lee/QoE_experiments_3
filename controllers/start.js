@@ -27,7 +27,7 @@ var post_start = async (ctx, next) => {
     var device = ctx.request.body.device;
     var age = ctx.request.body.age;
     var network = ctx.request.body.network;
-    var video_order = [1, 2, ...getOder(3,num_vids)];
+    var video_order = [1, 2, ...getOder(3,num_vids)]; // accounts for variable number of videos (num_vids)
     //var video_order = [1,2,3,4]
     console.log(mturkID, device, age);
     var start = new Date().getTime();

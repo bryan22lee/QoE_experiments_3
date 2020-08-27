@@ -6,19 +6,21 @@ import subprocess
 
 
 #Sample filter function
-def filter_single_video(video_times, rating_times, video_order, scores,attentions):
+def filter_single_video(video_times, rating_times, video_order, scores, attentions):
     #First check if user watching aligns with video length
     #0.5 sec tolerance for black screen at the end
-    ret = 0
-    bad = 0
+        # ret = 0
+        # bad = 0
     violate = 0
     if attentions[0] != 2 :
         violate +=1
-    if  attentions[1] != 5:
+    if attentions[1] != 5 or attentions[3] != 5:
         violate +=1
-    for i in range(2,len(video_order)):
-        if attentions[i]  != 5 and attentions[i] !=3:
-            violate +=10
+    if attentions[2] != 5:
+        if attentions[2] == 4: # stall and no blur
+            violate += 1
+        else:
+            return 1 # fail (move to rejected folder)
     if violate >= 2:
         return 1
     return 0 #We don't move this user to rejected folder
