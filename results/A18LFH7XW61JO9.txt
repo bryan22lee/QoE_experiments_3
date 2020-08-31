@@ -1,0 +1,22 @@
+5,1,2,3
+1,2,3,4
+105633,35798,47890,36643
+70.833,33.704,35.769,34.155
+17084,6719,9452,9660
+15.042,4.57,4.388,6.483
+A18LFH7XW61JO9
+Laptop
+32 - 38
+WiFi
+Quality damage at the crucial time affect the viewing experience a lot. Quality damage at the beginning is not crucial. It is annoying after the video starts.
+Chrome
+18.596
+20.928
+3,1,1,1
+2,1,1,1
+5,0,0,0
+0,0,0,0
+0,0,0,0
+August 27th 2020, 9:51:30 am
+09:51:30 CDT
+2,5,5,3
