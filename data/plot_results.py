@@ -21,7 +21,7 @@ header = "LOG OF " + inp + " SURVEY RESULTS\n\n"
 
 # x axis configuration
 #x = np.array([2, 4])
-x = ["best", "worst", "1", "2", "3", "4","5"]
+x = ["best", "worst", "1", "2"]
 x_label = "buffered videos in incremental order"
 
 # Function to standardize scores
@@ -84,7 +84,8 @@ rej_res = rr.get_results(rej_path, inp)
 # function to sort results into corresponding lists
 def sort_results(res, grade_list, order_list, vid_time_list, grade_time_list, user_reason_list, device_arr, age_arr, network_arr):
     for user in res:
-        
+        if user == []:
+            continue
         grade_list.append(user[0])
         order_list.append(user[1])
         vid_time_list.append(user[2])

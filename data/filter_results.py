@@ -14,13 +14,18 @@ def filter_single_video(video_times, rating_times, video_order, scores, attentio
     violate = 0
     if attentions[0] != 2 :
         violate +=1
-    if attentions[1] != 5 or attentions[3] != 5:
+    if attentions[1] != 5:
         violate +=1
     if attentions[2] != 5:
         if attentions[2] == 4: # stall and no blur
             violate += 1
         else:
             return 1 # fail (move to rejected folder)
+    if attentions[3] != 5:
+        if attentions[3] == 3 or attentions[3] == 4:
+            violate += 1
+        else:
+            return 1 # fail
     if violate >= 2:
         return 1
     return 0 #We don't move this user to rejected folder
