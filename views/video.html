@@ -26,9 +26,10 @@
 </div>
 
 <script>
-
+// Hides 'Go to Grading' button until video is watched in full
 document.getElementById("form_container").style.display="none";
-            
+           
+// Makes 'Go to Grading' button visible once the video is fully watched
 document.getElementById('myVideo').addEventListener('ended',myHandler,false);
     function myHandler(e) {
         document.getElementById("form_container").style.display="block";
@@ -98,8 +99,8 @@ function checkform(){
     }
 
 var seek = 0;
-var play = 0
-var pause = 0
+var play = 0;
+var pause = 0;
 
 
 document.getElementById('myVideo').addEventListener('play',myHandler2,false);

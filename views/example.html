@@ -58,8 +58,8 @@
 }
 
 
-// Slow load
-var req =  createCORSRequest('GET','https://raw.githubusercontent.com/bryan22lee/QoE_experiments_3/master/slow_load.mp4');
+// Fast load
+var req = createCORSRequest('GET','https://raw.githubusercontent.com/bryan22lee/QoE_experiments_3/master/videos/example_web_load_videos_stackoverflow/fast_load.mp4');
 req.responseType = 'blob';
 
 
@@ -72,7 +72,7 @@ req.onload = function() {
       var vid = URL.createObjectURL(videoBlob); // IE10+
       // Video is now downloaded
       // and we can set it as source on the video element
-      document.getElementById('stall').src = vid;
+      document.getElementById('stall').src = vid; // Fast
    }
 }
 
@@ -80,8 +80,8 @@ req.onload = function() {
 req.send();
 
 
-// Fast load
-var req =  createCORSRequest('GET','https://raw.githubusercontent.com/bryan22lee/QoE_experiments_3/master/fast_load.mp4');
+// Slow load
+var req = createCORSRequest('GET','https://raw.githubusercontent.com/bryan22lee/QoE_experiments_3/master/videos/example_web_load_videos_stackoverflow/slow_load.mp4');
 req.responseType = 'blob';
 
 req.onload = function() {
@@ -92,7 +92,7 @@ req.onload = function() {
       var vid = URL.createObjectURL(videoBlob); // IE10+
       // Video is now downloaded
       // and we can set it as source on the video element
-      document.getElementById('blur').src = vid;
+      document.getElementById('blur').src = vid; // Slow
       alert('video loaded');
    }
 }

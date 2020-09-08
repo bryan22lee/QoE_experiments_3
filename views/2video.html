@@ -39,7 +39,7 @@
           <video width="1024" height="576" controls="controls" id="myVideo" >
                  
           </video>
-          <h2> Test Video</h2> 
+          <h2> Test Loading Video</h2> 
       </div>
         </br></br>
 
@@ -50,28 +50,29 @@
           <button type="submit" class="btn btn-primary" onclick="return checkform()">Go to Grading</button>
       </form>
   </div>
-<br>
 
-  <div id="form_container">
+  <!-- Don't need to see references for web loading tests -->
+  <!-- <div id="form_container">
       <form action="reference" method="POST" style="text-align:center" id="next_page2">
           <button type="submit" class="btn btn-primary" onclick="return checkform2()">See reference videos again</button>
       </form>
-  </div>
+  </div> -->
 
 
 </body>
 <script>
 var seek = 0;
-var play = 0
-var pause = 0
+var play = 0;
+var pause = 0;
 
-document.getElementById("form_container").style.display="none";
+// // Hides 'Go to Grading' button until video is watched in full in the test videos
+// document.getElementById("form_container").style.display="none";
             
-
-document.getElementById('myVideo').addEventListener('ended',myHandler1,false);
-    function myHandler1(e) {
-        document.getElementById("form_container").style.display="block";
-    }
+// // Makes 'Go to Grading' button visible once the video is fully watched
+// document.getElementById('myVideo').addEventListener('ended',myHandler1,false);
+//     function myHandler1(e) {
+//         document.getElementById("form_container").style.display="block";
+//     }
 
 document.getElementById('myVideo').addEventListener('play',myHandler2,false);
     function myHandler2(e) {
