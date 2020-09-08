@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% block main %}
 <div class="col-md-6 col-md-offset-3" style="text-align:center">
- <h2> <b>Please decide which answer best describes the quality of last video. </b> </h2>
+ <h2> <b>Please decide which answer best describes the quality of the last web page load. </b> </h2>
 
     <h3>Progress: {{count}} / {{num_vids}}</h3>
 </div>
@@ -8,20 +8,20 @@
 <div class="col-md-6 col-md-offset-3">
     <form name="myform" action= "next" method="POST" style="text-align:center" id="myform">
         <div class="btn-group-vertical" data-toggle="buttons" id="Inputs">
-            <label class="btn btn-default"><input id="StronglyPositive" name="sentiment" required="" type="radio" value="5" /><h4>Excellent (Imperceptible Quality Damage)</h4>
+            <label class="btn btn-default"><input id="StronglyPositive" name="sentiment" required="" type="radio" value="5" /><h4>Excellent (Fantastic load)</h4>
             </label>
-            <label class="btn btn-default"><input id="Positive" name="sentiment" required="" type="radio" value="4" /><h4>Good (Perceptible But Not Annoying Quality Damage)</h4>
+            <label class="btn btn-default"><input id="Positive" name="sentiment" required="" type="radio" value="4" /><h4>Good (Good but could be better)</h4>
             </label>
-            <label class="btn btn-default"><input id="Neutral" name="sentiment" required="" type="radio" value="3" /><h4>Fair (Slightly Annoying Quality Damage)</h4>
+            <label class="btn btn-default"><input id="Neutral" name="sentiment" required="" type="radio" value="3" /><h4>Fair (Slightly annoying)</h4>
             </label>
-            <label class="btn btn-default"> <input id="Negative" name="sentiment" required="" type="radio" value="2" /><h4>Poor (Annoying Quality Damage)</h4>
+            <label class="btn btn-default"> <input id="Negative" name="sentiment" required="" type="radio" value="2" /><h4>Poor (Annoying)</h4>
             </label>
-            <label class="btn btn-default"> <input id="StronglyNegative" name="sentiment" required="" type="radio" value="1" /><h4>Bad (Very Annoying Quality Damage)</h4>
+            <label class="btn btn-default"> <input id="StronglyNegative" name="sentiment" required="" type="radio" value="1" /><h4>Bad (Very Annoying)</h4>
             </label>
         </div>
 
-        <h2> <b style="color:#FF0000">Next two questions serve as attention checks. </b> Select if following quality damages occured in last video (If last video is the BEST quality reference, you must answer <b>"No"</b> to both questions.) </h2>
-        <h3> Did you notice extra resolution decrease when compared with excellent grade reference? </h3>
+        <h2> <b style="color:#FF0000">The next two questions serve as attention checks. </b> Please respond accordingly. </h2>
+        <h3> Was the load shorter than 2 minutes? </h3>
         <div class="btn-group-vertical" data-toggle="buttons" id="Inputs2">
            <label class="btn btn-default"><input id="yes" name="blur" required=""   type="radio" value="1" /><h4>Yes</h4>
             </label>
@@ -30,7 +30,7 @@
         </div>
 
 
-        <h3> Did you notice extra video pause of more than 1 second when compared with excellent grade reference?  </h3>
+        <h3> Were there any <u>obvious</u> changes in resolution that led to blurring?  </h3>
         <div class="btn-group-vertical" data-toggle="buttons" id="Inputs3">
            <label class="btn btn-default"><input id="yes" name="stall" required=""   type="radio" value="4" /><h4>Yes</h4>
             </label>
