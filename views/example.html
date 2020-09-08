@@ -4,7 +4,7 @@
 <!-- End instructions --><!-- Categorization Layout -->
 
     <div  style="text-align:center"> 
-        <h2>The Quality Damages that might appear in this survey are: <b>resolution decrease</b> and <b>video pause</b>. Below are examples:</h2> 
+        <h1>Web page loading ranges from <b>slow</b> to <b>fast</b>. Below are examples:</h1> 
     </div>
 
 <div class="row" id="workContent">
@@ -13,7 +13,7 @@
 
 
     <div  style="text-align:center"> 
-        <h2>resolution decrease (occuring at the end of first second) </h2> 
+        <h2>slow load</h2> 
     </div>
 
 
@@ -22,7 +22,7 @@
       </video>
   </div>
     <div  style="text-align:center"> 
-        <h2>video pause (occuring at the end of first second)</h2> 
+        <h2>fast load</h2> 
     </div>
 
   <div class="panel-body", style="text-align:center">
@@ -58,7 +58,8 @@
 }
 
 
-var req =  createCORSRequest('GET','https://raw.githubusercontent.com/tony-ou/QoE_experiments/master/stall.mp4');
+// Slow load
+var req =  createCORSRequest('GET','https://raw.githubusercontent.com/bryan22lee/QoE_experiments_3/master/slow_load.mp4');
 req.responseType = 'blob';
 
 
@@ -79,7 +80,8 @@ req.onload = function() {
 req.send();
 
 
-var req =  createCORSRequest('GET','https://raw.githubusercontent.com/tony-ou/QoE_experiments/master/blur.mp4');
+// Fast load
+var req =  createCORSRequest('GET','https://raw.githubusercontent.com/bryan22lee/QoE_experiments_3/master/fast_load.mp4');
 req.responseType = 'blob';
 
 req.onload = function() {
