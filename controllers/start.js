@@ -3,7 +3,7 @@ const moment = require('moment-timezone');
 var getOder = require('../models/random');
 var fs = require('fs');
 
-const vid_folder = "Soccer_720p_2_500k_360_exp1";
+const vid_folder = "web_QoE_experiment_1";
 var vid_path = "./videos/" + vid_folder;
 var video_url = "https://raw.githubusercontent.com/bryan22lee/QoE_experiments_3/master/videos/" + vid_folder + "/";
 var best_quality = video_url + "1.mp4";
