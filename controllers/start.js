@@ -3,7 +3,7 @@ const moment = require('moment-timezone');
 var getOder = require('../models/random');
 var fs = require('fs');
 
-const vid_folder = "web_QoE_experiment_1";
+const vid_folder = "web_QoE_AMZN_exp_1";
 var vid_path = "./videos/" + vid_folder;
 var video_url = "https://raw.githubusercontent.com/bryan22lee/QoE_experiments_3/master/videos/" + vid_folder + "/";
 var best_quality = video_url + "1.mp4";
@@ -22,10 +22,11 @@ var post_example = async (ctx, next) => {
 }
 
 var post_start = async (ctx, next) => {
-    // 03:48:34 CST
-    var time_start = moment().tz('America/Chicago').format('hh:mm:ss z')
     // August 27th 2020, 12:00:28 am
-    var date_start = moment().tz('America/Chicago').format('MMMM Do YYYY, h:mm:ss a');
+    var time_start = moment().tz('America/Chicago').format('MMMM Do YYYY, h:mm:ss a').split(', '); // Central time (CDT)
+    // Starting date & time that test is taken
+    var date_take = time_start[0];
+    var time_take = time_start[1];
 
     var active_time = parseFloat(ctx.request.body.active_time);
     var browserName = ctx.request.body.browser;
@@ -33,8 +34,8 @@ var post_start = async (ctx, next) => {
     var device = ctx.request.body.device;
     var age = ctx.request.body.age;
     var network = ctx.request.body.network;
-    var video_order = [1, 2, ...getOder(3,num_vids)]; // accounts for variable number of videos (num_vids)
-    //var video_order = [1,2,3,4]
+    // Show example videos first: 6 (good quality), 7 (bad quality), the rest are based on bins
+    var video_order = [6, 7, ...getOder(1,num_vids - 2)];
     console.log(mturkID, device, age);
     var start = new Date().getTime();
    
@@ -42,8 +43,6 @@ var post_start = async (ctx, next) => {
 
  
     let user = {
-        time_start : time_start,
-        date_start : date_start,
         mturkID : mturkID,
         device : device,
         age : age,
@@ -64,7 +63,9 @@ var post_start = async (ctx, next) => {
         browser: browserName,
         reference: [],
         return : [],
-        training : 0
+        training : 0,
+        date_take : date_take,
+        time_take : time_take
     };
     for (i = 0; i < num_vids; i++)
     {
@@ -315,7 +316,7 @@ write_return[user.video_order[i] -1 ]= user.return[i];
                  + user.device + '\n' + user.age + '\n' 
                  + user.network + '\n' + user.reason +'\n'+ user.browser + '\n' + user.instruction + '\n'+ user.training + '\n' +
                  write_play + '\n' + write_pause + '\n' + write_seek + '\n' + write_reference + '\n' + write_return + '\n' +
-                 user.date_start + '\n' + user.time_start + '\n' + write_test, function(err) {
+                 user.date_take + '\n' + user.time_take + '\n' + write_test, function(err) {
         if(err) {
             return console.log(err);
         }
