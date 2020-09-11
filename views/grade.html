@@ -1,27 +1,28 @@
 {% extends "base.html" %} {% block main %}
 <div class="col-md-6 col-md-offset-3" style="text-align:center">
- <h2> <b>Please decide which answer best describes the quality of the last web page load. </b> </h2>
-
-    <h3>Progress: {{count}} / {{num_vids}}</h3>
+ <h2>Please decide to which extent you agree with the following statement:</h2>
+ <h2>A web page that loads at the speed shown in the video provides a satisfactory experience.</h2>
+ <h3>Progress: {{count}} / {{num_vids}}</h3>
 </div>
 
 <div class="col-md-6 col-md-offset-3">
     <form name="myform" action= "next" method="POST" style="text-align:center" id="myform">
         <div class="btn-group-vertical" data-toggle="buttons" id="Inputs">
-            <label class="btn btn-default"><input id="StronglyPositive" name="sentiment" required="" type="radio" value="5" /><h4>Excellent (Fantastic load)</h4>
+            <label class="btn btn-default"><input id="StronglyPositive" name="sentiment" required="" type="radio" value="5" /><h4>Strongly Agree</h4>
             </label>
-            <label class="btn btn-default"><input id="Positive" name="sentiment" required="" type="radio" value="4" /><h4>Good (Good but could be better)</h4>
+            <label class="btn btn-default"><input id="Positive" name="sentiment" required="" type="radio" value="4" /><h4>Agree</h4>
             </label>
-            <label class="btn btn-default"><input id="Neutral" name="sentiment" required="" type="radio" value="3" /><h4>Fair (Slightly annoying)</h4>
+            <label class="btn btn-default"><input id="Neutral" name="sentiment" required="" type="radio" value="3" /><h4>Neutral</h4>
             </label>
-            <label class="btn btn-default"> <input id="Negative" name="sentiment" required="" type="radio" value="2" /><h4>Poor (Annoying)</h4>
+            <label class="btn btn-default"> <input id="Negative" name="sentiment" required="" type="radio" value="2" /><h4>Disagree</h4>
             </label>
-            <label class="btn btn-default"> <input id="StronglyNegative" name="sentiment" required="" type="radio" value="1" /><h4>Bad (Very Annoying)</h4>
+            <label class="btn btn-default"> <input id="StronglyNegative" name="sentiment" required="" type="radio" value="1" /><h4>Strongly Disagree</h4>
             </label>
         </div>
 
         <h2> <b style="color:#FF0000">The next two questions serve as attention checks. </b> Please respond accordingly. </h2>
-        <h3> Was the load shorter than 2 minutes? </h3>
+
+        <h3> Was the video shorter than 2 minutes? </h3>
         <div class="btn-group-vertical" data-toggle="buttons" id="Inputs2">
            <label class="btn btn-default"><input id="yes" name="blur" required=""   type="radio" value="1" /><h4>Yes</h4>
             </label>
@@ -30,7 +31,7 @@
         </div>
 
 
-        <h3> Were there any <u>obvious</u> changes in resolution that led to blurring?  </h3>
+        <h3> Were there any <u>obvious</u> resolution changes that led to blurring?  </h3>
         <div class="btn-group-vertical" data-toggle="buttons" id="Inputs3">
            <label class="btn btn-default"><input id="yes" name="stall" required=""   type="radio" value="4" /><h4>Yes</h4>
             </label>
@@ -106,11 +107,11 @@
         //alert($('[name=device]').val());
         if(Number(document.forms["myform"]["sentiment"].value) != 5 && '{{count}}' == 1 ) {
             flag = false;
-            alert("Please select Excellent.")
+            alert("Please select Strongly Agree.")
         }
         else if (Number(document.forms["myform"]["sentiment"].value) != 1 && '{{count}}' == 2 ) {
             flag = false;
-            alert("Please select Bad.")
+            alert("Please select Strongly Disagree.")
         }
         if (flag){
             var timeSpentOnPage = TimeMe.getTimeOnCurrentPageInSeconds().toString();
