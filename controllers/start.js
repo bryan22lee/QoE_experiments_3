@@ -34,7 +34,7 @@ var post_start = async (ctx, next) => {
     var device = ctx.request.body.device;
     var age = ctx.request.body.age;
     var network = ctx.request.body.network;
-    // Show example videos first: 1 (good quality example), 2 (bad quality example), the rest are test videos
+    // Show example videos first: 1 (good quality example), 2 (bad quality example). The rest are test videos
     var video_order = [1, 2, ...getOder(3,num_vids)];
     console.log(mturkID, device, age);
     var start = new Date().getTime();
