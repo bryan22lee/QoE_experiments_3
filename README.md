@@ -114,4 +114,4 @@ These are source codes for 1video experiment.
 For example: best quality should be 2 and worst quality should be 5
 
 
-## The videos in [web_QoE_AMZN_exp_1/](https://github.com/bryan22lee/QoE_experiment_3_/tree/master/videos/web_QoE_AMZN_exp_1) were generated from [WebPageTest](https://www.webpagetest.org/).
+### The videos in [web_QoE_AMZN_exp_1/](https://github.com/bryan22lee/QoE_experiments_3/tree/master/videos/web_QoE_AMZN_exp_1) were generated from [WebPageTest](https://www.webpagetest.org/).
