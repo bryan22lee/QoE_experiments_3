@@ -109,9 +109,16 @@ var post_grade= async (ctx, next) => {
     ctx.cookies.set('name', value);
 
     var title = user.count + "/" + num_vids;
-    ctx.render('grade.html', {
-        title: title, count: user.count, num_vids: num_vids
-    });
+
+    if (user.count != 2) {
+        ctx.render('grade.html', {
+            title: title, count: user.count, num_vids: num_vids
+        });
+    } else {
+        ctx.render('grade2.html', {
+            title: title, count: user.count, num_vids: num_vids
+        });
+    }
 }
 
 var post_first = async (ctx, next) => {
@@ -229,7 +236,8 @@ var post_next = async (ctx, next) => {
     var end = new Date().getTime();
     var exe_time = end - user.start;
 
-    var attention_test = Number(ctx.request.body.blur)+ Number(ctx.request.body.stall);
+    // var attention_test = Number(ctx.request.body.blur) + Number(ctx.request.body.stall);
+    var attention_test = Number(ctx.request.body.long);
   
     user.test.push(attention_test);
     user.result.push(grade);
@@ -316,7 +324,7 @@ write_return[user.video_order[i] -1 ]= user.return[i];
                  + user.device + '\n' + user.age + '\n' 
                  + user.network + '\n' + user.reason +'\n'+ user.browser + '\n' + user.instruction + '\n'+ user.training + '\n' +
                  write_play + '\n' + write_pause + '\n' + write_seek + '\n' + write_reference + '\n' + write_return + '\n' +
-                 user.date_take + '\n' + user.time_take + '\n' + write_test, function(err) {
+                 user.date_take + '\n' + user.time_take + '\n' + write_test[1], function(err) {
         if(err) {
             return console.log(err);
         }
