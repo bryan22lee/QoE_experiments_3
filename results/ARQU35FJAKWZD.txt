@@ -1,0 +1,22 @@
+5,1,3,5,5,5,1
+1,2,5,7,4,6,3
+56896,17452,7112,7746,13017,7807,10314
+22.307,15.38,5.206,4.749,11.05,5.61,8.13
+17274,17742,9039,4417,14869,5744,5787
+15.071,15.551,6.651,2.621,6.485,3.555,2.94
+ARQU35FJAKWZD 
+Computador portátil
+25 - 31
+Wi-fi
+What I particularly liked or disliked was the speed that the page it loads and the way it loads the elements, (from top to bottom is more pleasing to the eye)
+Firefox
+27.036
+22.617
+2,2,1,1,1,1,1
+2,2,0,0,0,0,0
+1,0,0,0,0,0,0
+0,0,0,0,0,0,0
+0,0,0,0,0,0,0
+September 14th 2020
+9:49:37 am
+0

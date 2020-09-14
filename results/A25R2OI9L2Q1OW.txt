@@ -1,0 +1,22 @@
+5,1,4,5,5,5,2
+1,2,6,5,7,4,3
+103748,17818,10965,18421,13874,17935,11709
+50.094,17.494,10.708,18.147,13.373,17.649,11.427
+3864,22874,3646,3132,4231,8923,3713
+3.603,22.61,3.427,2.899,3.97,5.532,3.488
+A25R2OI9L2Q1OW
+Desktop
+39 - 45
+Cable network
+For me, I tried to consider overall speed.  It the page loaded in a quarter or half a second, then fine.  I mainly tried to consider what would constitute a satisfactory, or positive experience for me.
+Chrome
+38.801
+50.661
+2,1,2,3,2,3,1
+2,1,1,2,1,2,0
+0,0,1,2,1,1,0
+0,0,0,0,0,0,0
+0,0,0,0,0,0,0
+September 14th 2020
+9:35:48 am
+0
