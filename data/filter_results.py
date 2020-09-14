@@ -14,15 +14,11 @@ def filter_single_video(video_times, active_video_times, rating_times, video_ord
     # violate = 0
     if attentions[0] != 0:
         return 1
-    for i in video_times:
-        if i < 3500:
+
+    for i, j, k in zip(video_times, active_video_times, rating_times):
+        if (i < 3500) or (j < 1.0) or (k <= 1000):
             return 1
-    for i in active_video_times:
-        if i < 1.0:
-            return 1
-    for i in rating_times:
-        if i <= 1000:
-            return 1
+
     return 0 #We don't move this user to rejected folder
 
 #Parse data from user result file 
