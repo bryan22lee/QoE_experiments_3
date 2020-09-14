@@ -1,0 +1,22 @@
+5,1,4,5,4,4,2
+1,2,4,6,5,7,3
+35126,14671,7224,9727,8379,9190,12444
+14.713,14.006,5.388,8.664,7.027,7.976,10.574
+7384,9431,3540,6002,4254,3057,2827
+6.607,8.261,2.493,2.838,3.011,2.017,1.757
+A3PYB8Z6FFWSOV
+Desktop
+25 - 31
+Cable network
+Whether everything that is supposed to appear on the web page appears all at once or not. The experiment guideline was clear.
+Chrome
+21.021
+17.977
+1,1,1,1,1,1,1
+1,1,0,0,0,0,0
+0,0,0,0,0,0,0
+0,0,0,0,0,0,0
+0,0,0,0,0,0,0
+September 13th 2020
+11:25:37 pm
+0

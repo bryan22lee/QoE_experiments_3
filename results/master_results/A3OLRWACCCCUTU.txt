@@ -1,0 +1,22 @@
+5,1,5,5,5,5,1
+1,2,7,4,6,3,5
+48877,14965,6166,8173,8579,6659,10386
+21.798,14.334,5.742,7.679,8.16,6.179,10.032
+9697,7103,2230,2811,2790,3011,5656
+8.935,6.785,1.83,2.377,2.357,2.553,3.385
+A3OLRWACCCCUTU
+Desktop
+53 - 59
+WiFi
+I didn't mind if the log in widget was a little slower than the rest of the page, I was most concerned about the "big" elements loading quickly.
+Firefox
+26.072
+16.595
+1,1,1,1,1,1,1
+1,1,0,0,0,0,0
+0,0,0,0,0,0,0
+0,0,0,0,0,0,0
+0,0,0,0,0,0,0
+September 13th 2020
+4:56:23 pm
+0

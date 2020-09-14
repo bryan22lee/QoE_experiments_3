@@ -1,0 +1,22 @@
+5,1,4,5,5,4,2
+1,2,6,7,4,3,5
+59653,18168,23377,22195,15603,12782,14658
+19.244,16.27,3.619,11.393,13.722,10.875,6.896
+129394,7595,3923,3200,3208,7249,2529
+54.075,5.472,2.122,1.412,1.403,2.324,1.228
+A1V6P1ZE6Q8YEW
+Desktop
+32 - 38
+WiFi
+Just that the  speed I am used to. A site shouldnt take more than couple of seconds to load. The experiment and attention check were clear to me.
+Chrome
+21.381
+18.844
+1,1,1,1,1,1,1
+1,1,1,1,1,0,1
+0,0,0,0,0,0,0
+0,0,0,0,0,0,0
+0,0,0,0,0,0,0
+September 14th 2020
+3:38:10 am
+0

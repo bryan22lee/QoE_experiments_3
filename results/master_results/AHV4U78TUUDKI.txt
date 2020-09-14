@@ -1,0 +1,22 @@
+5,1,4,3,4,5,1
+1,2,3,7,6,5,4
+75765,21341,16104,17213,15896,13163,16339
+39.936,20.882,15.697,16.785,15.491,12.747,15.891
+18991,13408,6184,9719,3248,2507,3771
+17.652,12.78,3.66,9.279,2.854,2.097,3.302
+AHV4U78TUUDKI
+Desktop
+46 - 52
+WiFi
+i would say its satisfactory to me when the majority of the page loads within a second and there are little or no variations after that initial loading. I put one as neutral because it loaded quickly but there was a lot of alterations after that load but the others were pretty straightforward. 
+Chrome
+35.861
+31.194
+2,1,1,1,1,1,1
+2,1,0,1,1,0,1
+0,0,0,0,0,0,0
+0,0,0,0,0,0,0
+1,0,0,0,0,0,0
+September 13th 2020
+11:07:05 pm
+0

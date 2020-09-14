@@ -1,0 +1,22 @@
+5,1,5,4,5,5,2
+1,2,7,5,3,4,6
+47934,20106,10834,9974,10654,10413,22145
+17.583,19.645,10.303,9.444,10.142,9.901,21.613
+15346,12208,3296,2621,3562,2233,10965
+15.059,11.91,2.97,2.307,3.261,1.815,9.131
+A2QGQOWEM9G55
+Desktop
+46 - 52
+WiFi
+If the page initially takes a few seconds longer to load it's not so annoying if it appears complete all at once when it finally does load. I find the ones that fill in parts of the page one at a time to be more annoying because you never quite know when the page is full loaded. I think the guidelines were useful.
+Chrome
+71.658
+27.92
+1,1,1,1,1,1,2
+1,1,0,0,0,0,1
+0,0,0,0,0,0,1
+0,0,0,0,0,0,0
+0,0,0,0,0,0,0
+September 13th 2020
+10:07:59 pm
+0

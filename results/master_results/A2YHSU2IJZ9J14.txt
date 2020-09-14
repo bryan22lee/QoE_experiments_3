@@ -1,0 +1,22 @@
+5,1,5,5,4,5,2
+1,2,6,4,3,5,7
+97051,26346,26536,29367,22841,29955,46347
+44.611999999999995,24.92,25.116,27.947,21.424,28.533,39.799
+23645,42828,3030,3510,7523,15012,14506
+20.781,41.406,1.845,2.315,6.119,6.372,11.678
+A2YHSU2IJZ9J14
+Desktop
+39 - 45
+Other
+The grading is pretty straight forward. Maybe there can be a reference to the acceptable avg loading speed for the page, because there is probably just a delay of 3 to 4 seconds between the excellent and bad reference videos, not alot ot tell them apart.
+Firefox
+34.089
+41.423
+5,2,2,2,2,2,3
+5,2,1,2,1,2,3
+13,1,1,1,1,1,1
+0,0,0,0,0,0,0
+1,0,0,0,0,0,1
+September 13th 2020
+10:07:48 pm
+0

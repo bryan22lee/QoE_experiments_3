@@ -1,0 +1,22 @@
+5,1,5,5,5,5,1
+1,2,7,6,5,4,3
+69251,15136,15341,16449,15272,15245,15450
+34.799,14.83,15.08,16.097,14.995,14.964,15.177
+15259,22320,4163,2707,5685,4894,4744
+14.644,22.009,3.89,2.429,2.636,4.636,2.348
+A2VE5IV9OD2SK1
+Laptop
+39 - 45
+Cable network
+The "sign in" button seems to come in last, even on fast loads, but in this case that doesn't effect the experience. One would either know where to go already to begin to sign in (I believe one can start to sign in even before the alert to where to do so pops up), or if the page is new to the user, one has to orient oneself around the page anyway. In other words, once one gets an idea of the layout of the page--a few seconds--all the elements have already fully loaded. (I should also mention that I've had very slow connections in the recent past, so a graphics-rich page that loads under ten seconds usually seems fine to me.) 
+Chrome
+64.344
+30.658
+2,1,1,1,1,1,1
+2,1,1,1,1,1,1
+0,0,0,0,0,0,0
+0,0,0,0,0,0,0
+1,0,0,0,0,0,0
+September 13th 2020
+5:26:07 pm
+0

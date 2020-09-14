@@ -1,0 +1,22 @@
+5,1,5,4,5,5,2
+1,2,7,4,5,3,6
+63337,15681,14565,10073,26464,14672,15667
+33.394,15.181,14.007,9.328,25.988,14.102,15.176
+22645,9020,2292,6384,2087,1855,9234
+21.585,8.516,1.745,5.854,1.6,1.436,6.752
+A2O2Q0LVWOWJ1G
+Laptop
+46 - 52
+WiFi
+I was more concerned with the speed of of the main content of the page. The "log in" icon, for example, didn't have much of an overall effect on how my feelings to how quickly the pages loaded. It was more of the main content.
+Chrome
+52.827
+26.339
+2,1,1,1,2,1,1
+2,1,1,0,1,0,1
+0,0,0,0,1,0,0
+0,0,0,0,0,0,0
+1,0,0,0,0,0,0
+September 13th 2020
+4:56:21 pm
+0

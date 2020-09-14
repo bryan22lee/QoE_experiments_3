@@ -1,0 +1,22 @@
+5,1,4,2,5,5,2
+1,2,6,3,7,5,4
+119112,35541,21080,44063,31644,18033,20300
+28.207,27.788,14.872,28.962,21.112,10.577,14.159
+13389,20311,7142,7119,8982,12986,5401
+10.952,18.243,3.428,4.836,5.225,5.796,3.243
+AAWX7QFQUNM6D
+Smart phone
+32 - 38
+WiFi
+I considered how fast the page started to load after clicking the play button. Then I considered how long it took for the page to fully load and the speed of slideshow. The instructions were clear to me and I had no problems with attention check.
+Chrome
+84.24
+52.08
+2,2,1,3,2,1,1
+2,2,1,3,1,0,1
+1,1,0,2,1,0,0
+0,0,0,0,0,0,0
+0,0,0,0,1,0,0
+September 13th 2020
+11:50:05 pm
+0
