@@ -6,39 +6,35 @@ import subprocess
 
 
 #Sample filter function
-def filter_single_video(video_times, rating_times, video_order, scores, attentions):
+def filter_single_video(video_times, active_video_times, rating_times, video_order, scores, attentions):
     #First check if user watching aligns with video length
     #0.5 sec tolerance for black screen at the end
         # ret = 0
         # bad = 0
-    violate = 0
-    if attentions[0] != 2 :
-        violate +=1
-    if attentions[1] != 5:
-        violate +=1
-    if attentions[2] != 5:
-        if attentions[2] == 4: # stall and no blur
-            violate += 1
-        else:
-            return 1 # fail (move to rejected folder)
-    if attentions[3] != 5:
-        if attentions[3] == 3 or attentions[3] == 4:
-            violate += 1
-        else:
-            return 1 # fail
-    if violate >= 2:
+    # violate = 0
+    if attentions[0] != 0:
         return 1
+    for i in video_times:
+        if i < 3500:
+            return 1
+    for i in active_video_times:
+        if i < 1.0:
+            return 1
+    for i in rating_times:
+        if i <= 1000:
+            return 1
     return 0 #We don't move this user to rejected folder
 
 #Parse data from user result file 
 def parse_results(lines):
-    #video_times = list(map(int,lines[2].strip().split(','))) #read times spent on each video  
-    #rating_times = list(map(int,lines[3].strip().split(','))) #read times spent on each rating  
-    video_times = []; rating_times = []
+    video_times = list(map(int,lines[2].strip().split(','))) #read times spent on each video
+    active_video_times = list(map(float,lines[3].strip().split(','))) #read time video played
+    rating_times = list(map(int,lines[4].strip().split(','))) #read times spent on each rating  
+    # video_times = []; rating_times = []
     video_order = list(map(int,lines[1].strip().split(','))) #read the video order seen by the surveyee
     scores = list(map(int,lines[0].strip().split(','))) #read scores
     attentions = list(map(int,lines[-1].strip().split(','))) #attention checks    
-    return video_times, rating_times, video_order, scores, attentions
+    return video_times, active_video_times, rating_times, video_order, scores, attentions
 
 
 #input from the cmd line script
